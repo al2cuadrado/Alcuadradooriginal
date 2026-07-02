@@ -289,6 +289,58 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 }
 .form-ok.show{display:block;}
 
+/* ── Modal de gracias ── */
+.al-modal{
+  position:fixed;inset:0;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(14,13,11,.55);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .35s var(--ease),visibility .35s;
+}
+.al-modal.open{opacity:1;visibility:visible;}
+.al-modal-card{
+  background:var(--crema);
+  color:var(--negro);
+  border-radius:26px;
+  padding:52px 40px 44px;
+  max-width:480px;
+  width:100%;
+  text-align:center;
+  box-shadow:0 40px 90px rgba(0,0,0,.45);
+  transform:translateY(26px) scale(.96);
+  transition:transform .45s var(--ease);
+}
+.al-modal.open .al-modal-card{transform:none;}
+.al-modal-logo{
+  display:inline-block;
+  font-size:1.5rem;
+  line-height:1;
+  margin-bottom:22px;
+}
+.al-modal-logo b{font-weight:700;}
+.al-modal-logo sup{font-size:.55em;font-weight:700;}
+.al-modal-logo span{font-weight:300;}
+.al-modal-card h3{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:2rem;
+  margin-bottom:12px;
+}
+.al-modal-card p{
+  font-size:.98rem;
+  line-height:1.7;
+  margin-bottom:28px;
+}
+.al-modal-card p a{font-weight:600;}
+
+
 /* ── Franja de 3 imágenes ── */
 .strip3{
   display:grid;
@@ -843,11 +895,12 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .nav-wsp svg{width:20px;height:20px;}
   .pill{padding:12px 22px;font-size:.9rem;}
   .contact-img{position:static;}
-  .section{padding:70px 22px;}
-  .intencion{padding:70px 22px;}
-  .hero-home{padding:60px 22px;min-height:auto;}
+  .section{padding:56px 22px;}
+  .intencion{padding:56px 22px;}
+  .intencion .btn{margin-top:30px;}
+  .hero-home{padding:48px 22px;min-height:auto;}
   .hero-home-inner,.somos-grid,.servicios-grid,.porfolio-grid,
-  .contact-grid,.web-grid{grid-template-columns:1fr;gap:44px;}
+  .contact-grid,.web-grid{grid-template-columns:1fr;gap:36px;}
   .form-grid{grid-template-columns:1fr;}
   .packs-cards,.branding-cards{grid-template-columns:1fr;}
   .strip3{grid-template-columns:1fr;}
@@ -856,10 +909,38 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .w-4,.w-5,.w-6,.w-7{grid-column:auto;}
   .w-off{margin-bottom:0;}
   .marca-gallery{grid-template-columns:1fr;}
-  .footer-inner{flex-direction:column;text-align:center;}
-  .footer-social{text-align:center;}
+  .site-footer{padding:46px 22px;}
+  .footer-inner{flex-direction:column;text-align:center;gap:28px;}
+  .footer-nav{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    width:100%;
+    max-width:360px;
+    margin:0 auto;
+  }
+  .footer-nav .pill{display:block;text-align:center;padding:13px 10px;font-size:.9rem;}
+  .footer-social{text-align:center;font-size:.95rem;}
+  .footer-social strong{margin-top:14px;}
+  .footer-social strong:first-child{margin-top:0;}
   .sticker-flor{right:-30px;width:80px;}
-  .foto-full{height:320px;}
-  .hero-packs{padding:80px 22px;}
+  .foto-full{height:340px;margin-top:44px;}
+  .hero-packs{padding:56px 22px 64px;}
   .marquee-track span{font-size:1.15rem;}
+  .marquee{padding:12px 0;}
+  .branding-film{display:none;}
+  .hero-contacto{min-height:52vh;padding:0;}
+  .hero-porfolio{padding:36px 22px 8px;}
+  .marca-head{padding:56px 22px 44px;}
+  .marca-back{padding:50px 22px;}
+  .packs-cards{margin-top:44px;gap:36px;}
+  .branding-cards{margin-top:44px;gap:32px;}
+  .work-grid{margin-top:50px;}
+  .proceso h2{margin-bottom:36px;}
+  .form-sub{margin-bottom:24px;}
+  .form-note{margin:18px auto 20px;}
+  .al-modal-card{padding:42px 26px 36px;border-radius:22px;}
+  .clipboard{padding:50px 24px 30px;}
+  .paper-card{padding:36px 26px;}
+  .web-img .sticker-negro{width:100px;right:0;bottom:-18px;}
 }

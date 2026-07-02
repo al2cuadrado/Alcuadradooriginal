@@ -156,6 +156,24 @@
     });
   });
 
+  /* ── Modal de gracias ── */
+  const modal = document.createElement('div');
+  modal.className = 'al-modal';
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('aria-modal', 'true');
+  modal.innerHTML =
+    '<div class="al-modal-card">' +
+    '<span class="al-modal-logo"><b>(al)</b><sup>2</sup><span>cuadrado</span></span>' +
+    '<h3>¡Gracias por escribirnos!</h3>' +
+    '<p>Recibimos tu mensaje y te contactaremos muy pronto. Mientras tanto, podés seguirnos en <a href="https://www.instagram.com/studio.al2/" target="_blank" rel="noopener">Instagram</a> para ver lo que estamos creando.</p>' +
+    '<button class="btn" type="button">¡Genial!</button>' +
+    '</div>';
+  document.body.appendChild(modal);
+  const closeModal = () => modal.classList.remove('open');
+  modal.querySelector('button').addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
   /* ── Formulario Web3Forms ── */
   document.querySelectorAll('form.al-form').forEach((form) => {
     form.addEventListener('submit', async (ev) => {
@@ -175,14 +193,16 @@
         const json = await res.json();
         if (json.success) {
           form.reset();
-          ok.textContent = '¡Gracias! Recibimos tu mensaje y te contactaremos pronto.';
+          ok.classList.remove('show');
+          modal.classList.add('open');
         } else {
           ok.textContent = 'Hubo un problema al enviar. Escribinos a alcuadrado.st@gmail.com';
+          ok.classList.add('show');
         }
       } catch {
         ok.textContent = 'Hubo un problema al enviar. Escribinos a alcuadrado.st@gmail.com';
+        ok.classList.add('show');
       }
-      ok.classList.add('show');
       btn.textContent = original;
       btn.disabled = false;
     });
