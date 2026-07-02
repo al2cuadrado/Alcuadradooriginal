@@ -749,6 +749,28 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 .paper-card .paper-sub{text-align:center;font-size:.95rem;font-weight:500;}
 .paper-card ul{padding-left:20px;font-size:.9rem;display:grid;gap:7px;}
 .paper-card .btn{align-self:center;margin-top:auto;}
+.paper-note{
+  margin-top:auto;
+  align-self:center;
+  max-width:340px;
+  background:var(--negro);
+  color:var(--crema);
+  border-radius:16px;
+  padding:22px 26px;
+  font-family:var(--sans);
+  font-weight:600;
+  font-size:.92rem;
+  text-align:center;
+  line-height:1.65;
+  transform:rotate(-2deg);
+  box-shadow:0 16px 34px rgba(14,13,11,.25);
+}
+.paper-note em{
+  font-family:var(--serif);
+  font-style:italic;
+  font-weight:600;
+  font-size:1.08em;
+}
 
 /* Desarrollo web */
 .web-grid{
