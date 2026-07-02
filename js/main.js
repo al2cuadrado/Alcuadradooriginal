@@ -28,6 +28,19 @@
   onScrollHeader();
   window.addEventListener('scroll', onScrollHeader, { passive: true });
 
+  /* ── Menú hamburguesa (mobile) ── */
+  const navToggle = document.querySelector('.nav-toggle');
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      const open = header.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    });
+    document.querySelectorAll('.main-nav a').forEach((a) => {
+      a.addEventListener('click', () => header.classList.remove('nav-open'));
+    });
+  }
+
   /* ── Split de titulares en líneas animadas ── */
   document.querySelectorAll('[data-split]').forEach((el) => {
     const words = el.innerHTML.trim().split(/\s+(?![^<]*>)/);
