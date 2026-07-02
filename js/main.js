@@ -62,7 +62,7 @@
   document.querySelectorAll('.reveal, .split-ready').forEach((el) => io.observe(el));
 
   // stagger automático dentro de grillas
-  document.querySelectorAll('.packs-cards, .branding-cards, .work-grid, .servicios-list, .form-grid, .strip3, .marca-gallery').forEach((grid) => {
+  document.querySelectorAll('.packs-cards, .branding-cards, .work-grid, .servicios-list, .form-grid, .marca-gallery').forEach((grid) => {
     Array.from(grid.children).forEach((child, i) => {
       child.classList.add('reveal');
       child.style.transitionDelay = `${Math.min(i * 0.08, 0.5)}s`;

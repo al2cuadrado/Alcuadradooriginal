@@ -341,12 +341,27 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 .al-modal-card p a{font-weight:600;}
 
 
-/* ── Franja de 3 imágenes ── */
-.strip3{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
+/* ── Franja de trabajos en movimiento ── */
+.strip-work{
+  overflow:hidden;
+  background:var(--negro);
 }
-.strip3 img{width:100%;height:460px;object-fit:cover;}
+.strip-track{
+  display:flex;
+  width:max-content;
+  animation:stripMove 75s linear infinite;
+}
+.strip-track img{
+  height:420px;
+  width:auto;
+  object-fit:cover;
+  flex-shrink:0;
+  display:block;
+}
+@keyframes stripMove{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
 
 /* ── Footer ── */
 .site-footer{
@@ -396,16 +411,17 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 }
 .hero-home-inner{
   position:relative;
-  max-width:1420px;
+  max-width:1560px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:1.15fr 1fr;
-  gap:40px;
+  grid-template-columns:1.25fr 1fr;
+  gap:32px;
   align-items:center;
   width:100%;
 }
 .hero-home-agenda img{
-  width:100%;
+  width:116%;
+  margin-left:-8%;
   max-width:none;
   filter:drop-shadow(0 30px 60px rgba(0,0,0,.45));
 }
@@ -430,8 +446,8 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 /* Somos */
 .somos-grid{
   display:grid;
-  grid-template-columns:1fr 1.1fr;
-  gap:64px;
+  grid-template-columns:1fr 1.15fr;
+  gap:44px;
   align-items:center;
 }
 .somos-sticker{width:min(540px,100%);margin-bottom:20px;}
@@ -463,8 +479,8 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 /* Servicios */
 .servicios-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:72px;
+  grid-template-columns:1.1fr 1fr;
+  gap:48px;
   align-items:center;
 }
 .servicios-list{list-style:none;}
@@ -488,9 +504,14 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 /* Porfolio (sección home) */
 .porfolio-grid{
   display:grid;
-  grid-template-columns:1.1fr 1fr;
-  gap:64px;
+  grid-template-columns:1.25fr 1fr;
+  gap:40px;
   align-items:center;
+}
+.porfolio-grid > div:first-child img{
+  width:142%;
+  max-width:none;
+  margin-left:-22%;
 }
 .porfolio-copy h2{
   font-size:clamp(2.2rem,4vw,3.4rem);
@@ -562,7 +583,7 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 .contact-grid{
   display:grid;
   grid-template-columns:1fr 1.1fr;
-  gap:56px;
+  gap:44px;
   align-items:start;
 }
 .contact-img{position:sticky;top:130px;}
@@ -732,8 +753,8 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 /* Desarrollo web */
 .web-grid{
   display:grid;
-  grid-template-columns:1.05fr 1fr;
-  gap:64px;
+  grid-template-columns:1.15fr 1fr;
+  gap:44px;
   align-items:center;
 }
 .web-img{position:relative;}
@@ -909,8 +930,10 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .contact-grid,.web-grid{grid-template-columns:1fr;gap:36px;}
   .form-grid{grid-template-columns:1fr;}
   .packs-cards,.branding-cards{grid-template-columns:1fr;}
-  .strip3{grid-template-columns:1fr;}
-  .strip3 img{height:280px;}
+  .strip-track img{height:240px;}
+  .strip-track{animation-duration:52s;}
+  .hero-home-agenda img{width:100%;margin-left:0;}
+  .porfolio-grid > div:first-child img{width:100%;margin-left:0;}
   .work-grid{grid-template-columns:1fr;gap:44px;}
   .w-4,.w-5,.w-6,.w-7{grid-column:auto;}
   .w-off{margin-bottom:0;}
