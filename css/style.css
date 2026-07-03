@@ -785,9 +785,9 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 }
 .como-pill{
   position:absolute;
-  left:-64px;
+  left:0;
   top:50%;
-  transform:translateY(-50%);
+  transform:translate(-50%, -50%);
   background:var(--negro);
   color:var(--crema);
   font-family:var(--serif);
@@ -832,10 +832,10 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 }
 .combinar-papers{
   position:absolute;
-  right:-20px;
-  bottom:40px;
-  width:min(290px,20vw);
-  transform:rotate(6deg);
+  right:-40px;
+  top:50%;
+  width:290px;
+  transform:translate(50%, -50%);
   z-index:1;
 }
 .papers-quote{
@@ -1067,7 +1067,6 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .ast{display:none;}
   .branding-film{opacity:.4;}
   .cm-film,.cm-team-wrap{opacity:.35;}
-  .combinar-papers{opacity:.5;}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;}
