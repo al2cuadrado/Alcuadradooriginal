@@ -1097,24 +1097,33 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .nav-wsp svg{width:20px;height:20px;}
   .pill{padding:12px 22px;font-size:.9rem;}
   .contact-img{position:static;}
-  .section{padding:56px 22px;}
-  .intencion{padding:56px 22px;}
-  .intencion .btn{margin-top:30px;}
-  .hero-home{padding:48px 22px;min-height:auto;}
+  .section{padding:46px 20px;}
+  .intencion{padding:46px 20px;}
+  .intencion .btn{margin-top:26px;}
+  .hero-home{padding:38px 20px;min-height:auto;}
   .hero-home-inner,.somos-grid,.servicios-grid,.porfolio-grid,
-  .contact-grid,.web-grid{grid-template-columns:1fr;gap:36px;}
+  .contact-grid,.web-grid{grid-template-columns:1fr;gap:28px;}
+  .lead{margin-top:16px;}
+  .somos-text .btn{margin-top:22px;}
+  .somos-text p{font-size:1.05rem;}
+  .servicios-list li a{padding:16px 4px;}
+  .acordeon summary{padding:20px 4px;}
+  .acordeon .acordeon-body{padding-bottom:22px;}
+  .link-proyectos{margin-top:18px;}
+  .hero-packs .btn{margin-top:26px;}
+  .foto-sec .btn{margin-top:24px;}
   .form-grid{grid-template-columns:1fr;}
   .packs-cards,.branding-cards{grid-template-columns:1fr;}
   .strip-track img{height:240px;}
   .strip-track{animation-duration:52s;}
   .hero-home-agenda img{width:100%;margin-left:0;}
   .porfolio-grid > div:first-child img{width:100%;margin-left:0;}
-  .work-grid{grid-template-columns:1fr;gap:44px;}
+  .work-grid{grid-template-columns:1fr;gap:30px;}
   .w-4,.w-5,.w-6,.w-7{grid-column:auto;}
   .w-off{margin-bottom:0;}
   .marca-gallery{grid-template-columns:1fr;}
-  .site-footer{padding:46px 22px;}
-  .footer-inner{flex-direction:column;text-align:center;gap:28px;}
+  .site-footer{padding:38px 20px;}
+  .footer-inner{flex-direction:column;text-align:center;gap:22px;}
   .footer-nav{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -1128,8 +1137,8 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .footer-social strong{margin-top:14px;}
   .footer-social strong:first-child{margin-top:0;}
   .sticker-flor{right:-30px;width:80px;}
-  .foto-full{height:340px;margin-top:44px;}
-  .hero-packs{padding:56px 22px 64px;}
+  .foto-full{height:320px;margin-top:34px;}
+  .hero-packs{padding:44px 20px 50px;}
   .marquee-track span{font-size:1.15rem;}
   .marquee{padding:12px 0;}
   .branding-film{display:none;}
@@ -1138,7 +1147,7 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .combinar-flow{
     padding:32px 26px;
     border-radius:28px;
-    margin-top:80px;
+    margin-top:56px;
   }
   .como-pill{
     left:50%;
@@ -1159,22 +1168,47 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   }
   .combinar-papers{
     position:static;
-    width:220px;
-    margin:40px auto 0;
+    width:200px;
+    margin:26px auto 0;
     transform:rotate(4deg);
   }
-  .hero-contacto{min-height:52vh;padding:0;}
-  .hero-porfolio{padding:36px 22px 8px;}
-  .marca-head{padding:56px 22px 44px;}
-  .marca-back{padding:50px 22px;}
-  .packs-cards{margin-top:44px;gap:36px;}
-  .branding-cards{margin-top:44px;gap:32px;}
-  .work-grid{margin-top:50px;}
-  .proceso h2{margin-bottom:36px;}
+  .combinar-nota{margin-top:26px;font-size:.95rem;}
+  .combinar-title{margin:8px 0 18px;}
+  .paper-note{max-width:300px;padding:18px 20px;font-size:.88rem;}
+  .cm-desc{margin-bottom:14px;}
+  .hero-contacto{min-height:46vh;padding:0;}
+  .hero-porfolio{padding:30px 20px 4px;}
+  .marca-head{padding:44px 20px 34px;}
+  .marca-back{padding:40px 20px;}
+  .packs-cards{margin-top:34px;gap:28px;}
+  .branding-cards{margin-top:34px;gap:26px;}
+  .work-grid{margin-top:36px;}
+  .proceso h2{margin-bottom:28px;}
   .form-sub{margin-bottom:24px;}
   .form-note{margin:18px auto 20px;}
   .al-modal-card{padding:42px 26px 36px;border-radius:22px;}
   .clipboard{padding:50px 24px 30px;}
   .paper-card{padding:36px 26px;}
   .web-img .sticker-negro{width:100px;right:0;bottom:-18px;}
+}
+
+/* ── Teléfonos chicos ── */
+@media(max-width:600px){
+  .section{padding:38px 16px;}
+  .intencion{padding:38px 16px;}
+  .hero-home{padding:28px 16px;}
+  .hero-home-inner,.somos-grid,.servicios-grid,.porfolio-grid,
+  .contact-grid,.web-grid{gap:22px;}
+  .form-grid{gap:16px;}
+  .strip-track img{height:190px;}
+  .strip-track{animation-duration:44s;}
+  .hero-contacto{min-height:40vh;}
+  .site-footer{padding:32px 16px;}
+  .marquee-track span{font-size:1rem;}
+  .marquee{padding:10px 0;}
+  .hero-packs{padding:36px 16px 44px;}
+  .clipboard{padding:44px 20px 26px;}
+  .paper-card{padding:30px 20px;}
+  .foto-full{height:260px;margin-top:28px;}
+  .marca-gallery img{min-height:0;}
 }
