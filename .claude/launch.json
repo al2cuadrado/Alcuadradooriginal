@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-agustinalmiron-Documents-web-al-cuadrado/f84a5983-43ff-425c-8be7-6c9aed07d4fc/scratchpad/serve.mjs"],
+      "port": 4173
+    }
+  ]
+}

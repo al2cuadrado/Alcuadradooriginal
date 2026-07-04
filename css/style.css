@@ -840,7 +840,7 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 }
 .combinar-papers{
   position:absolute;
-  right:-40px;
+  right:-72px;
   top:50%;
   width:230px;
   transform:translate(50%, -50%);
@@ -1070,6 +1070,17 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 /* ============================================================
    Responsive
    ============================================================ */
+@media(max-width:1320px){
+  .combinar-papers{
+    position:relative;
+    right:auto;
+    top:auto;
+    width:min(240px,70%);
+    margin:26px auto 0;
+    transform:rotate(-3deg);
+    filter:drop-shadow(0 14px 26px rgba(14,13,11,.18));
+  }
+}
 @media(max-width:1024px){
   .float-img{display:none;}
   .ast{display:none;}
@@ -1234,4 +1245,25 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .paper-card{padding:30px 20px;}
   .foto-full{height:260px;margin-top:28px;}
   .marca-gallery img{min-height:0;}
+  /* Cita "combinar" como sticker negro (la pila de papeles no escala bien en celu) */
+  .combinar-papers{
+    width:auto;
+    max-width:320px;
+    margin:22px auto 2px;
+    transform:rotate(-2deg);
+    filter:none;
+  }
+  .combinar-papers img{display:none;}
+  .papers-quote{
+    position:static;
+    background:var(--negro);
+    color:var(--crema);
+    text-align:center;
+    font-size:1.3rem;
+    line-height:1.2;
+    padding:24px 26px;
+    border-radius:22px;
+    transform:none;
+    box-shadow:0 14px 26px rgba(14,13,11,.18);
+  }
 }
