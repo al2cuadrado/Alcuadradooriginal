@@ -451,7 +451,15 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   align-items:center;
 }
 .somos-sticker{width:min(540px,100%);margin-bottom:20px;}
-.somos-text p{font-size:1.15rem;font-weight:500;line-height:1.75;}
+.somos-text{
+  align-self:stretch;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:26px 0 250px;
+}
+.somos-text .btn{align-self:center;}
+.somos-text p{font-size:1.22rem;font-weight:500;line-height:1.85;}
 .somos-text .btn{margin-top:34px;}
 
 /* Creamos con intención */
@@ -1108,6 +1116,8 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .hero-home-inner,.somos-grid,.servicios-grid,.porfolio-grid,
   .contact-grid,.web-grid{grid-template-columns:1fr;gap:28px;}
   .lead{margin-top:16px;}
+  .somos-text{align-self:auto;display:block;padding:0;}
+  .somos-text p{font-size:1.05rem;line-height:1.7;}
   .somos-text .btn{margin-top:22px;}
   .somos-text p{font-size:1.05rem;}
   .servicios-list li a{padding:16px 4px;}
@@ -1174,10 +1184,13 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .combinar-flow{padding:28px 22px 26px;}
   .combinar-steps{gap:20px;}
   .combinar-papers{
-    position:static;
-    width:min(280px,80%);
-    margin:20px auto 0;
-    transform:rotate(3deg);
+    position:relative;
+    right:auto;
+    top:auto;
+    width:min(310px,88%);
+    margin:18px auto 4px;
+    transform:rotate(-3deg);
+    filter:drop-shadow(0 14px 26px rgba(14,13,11,.18));
   }
   .combinar-nota{margin-top:24px;font-size:.95rem;}
   .combinar-title{margin:8px 0 18px;}
