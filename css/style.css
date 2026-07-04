@@ -1098,8 +1098,8 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .pill{padding:12px 22px;font-size:.9rem;}
   .contact-img{position:static;}
   .section{padding:46px 20px;}
-  .intencion{padding:46px 20px;}
-  .intencion .btn{margin-top:26px;}
+  .intencion{padding:44px 20px 36px;}
+  .intencion .btn{margin-top:22px;}
   .hero-home{padding:38px 20px;min-height:auto;}
   .hero-home-inner,.somos-grid,.servicios-grid,.porfolio-grid,
   .contact-grid,.web-grid{grid-template-columns:1fr;gap:28px;}
@@ -1116,7 +1116,7 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .packs-cards,.branding-cards{grid-template-columns:1fr;}
   .strip-track img{height:240px;}
   .strip-track{animation-duration:52s;}
-  .hero-home-agenda img{width:100%;margin-left:0;}
+  .hero-home-agenda img{width:118%;margin-left:-9%;max-width:none;}
   .porfolio-grid > div:first-child img{width:100%;margin-left:0;}
   .work-grid{grid-template-columns:1fr;gap:30px;}
   .w-4,.w-5,.w-6,.w-7{grid-column:auto;}
@@ -1136,7 +1136,8 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .footer-social{text-align:center;font-size:.95rem;}
   .footer-social strong{margin-top:14px;}
   .footer-social strong:first-child{margin-top:0;}
-  .sticker-flor{right:-30px;width:80px;}
+  .sticker-flor{right:-8px;top:-46px;bottom:auto;width:62px;}
+  .pack-title{font-size:clamp(1.9rem,8vw,3rem);}
   .foto-full{height:320px;margin-top:34px;}
   .hero-packs{padding:44px 20px 50px;}
   .marquee-track span{font-size:1.15rem;}
@@ -1203,7 +1204,10 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .strip-track img{height:190px;}
   .strip-track{animation-duration:44s;}
   .hero-contacto{min-height:40vh;}
-  .site-footer{padding:32px 16px;}
+  .site-footer{padding:26px 16px 30px;}
+  .footer-inner{gap:16px;}
+  .footer-social{font-size:.9rem;line-height:1.5;}
+  .footer-social strong{margin-top:10px;}
   .marquee-track span{font-size:1rem;}
   .marquee{padding:10px 0;}
   .hero-packs{padding:36px 16px 44px;}
