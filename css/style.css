@@ -544,6 +544,10 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 }
 .link-proyectos:hover{border-color:var(--negro);}
 
+/* Menos aire entre porfolio y proceso (el padding 90px de .section se duplicaba) */
+#porfolio{padding-bottom:36px;}
+.proceso{padding-top:40px;}
+
 /* Proceso (acordeón) */
 .proceso h2{
   text-align:center;
