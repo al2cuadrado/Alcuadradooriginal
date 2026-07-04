@@ -1097,7 +1097,11 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .nav-wsp svg{width:20px;height:20px;}
   .pill{padding:12px 22px;font-size:.9rem;}
   .contact-img{position:static;}
-  .section{padding:46px 20px;}
+  .section{padding:40px 20px;}
+  #desarrollo-web{padding-bottom:20px;}
+  .foto-sec{padding-top:20px;}
+  .web-copy .btn{margin-top:18px;}
+  .web-copy h2,.foto-sec h2{margin-bottom:14px;}
   .intencion{padding:44px 20px 36px;}
   .intencion .btn{margin-top:22px;}
   .hero-home{padding:38px 20px;min-height:auto;}
@@ -1136,7 +1140,7 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
   .footer-social{text-align:center;font-size:.95rem;}
   .footer-social strong{margin-top:14px;}
   .footer-social strong:first-child{margin-top:0;}
-  .sticker-flor{right:-8px;top:-46px;bottom:auto;width:62px;}
+  .sticker-flor{display:none;}
   .pack-title{font-size:clamp(1.9rem,8vw,3rem);}
   .foto-full{height:320px;margin-top:34px;}
   .hero-packs{padding:44px 20px 50px;}
@@ -1167,13 +1171,15 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
     padding:6px 18px;
     margin-bottom:12px;
   }
+  .combinar-flow{padding:28px 22px 26px;}
+  .combinar-steps{gap:20px;}
   .combinar-papers{
     position:static;
-    width:200px;
-    margin:26px auto 0;
-    transform:rotate(4deg);
+    width:min(280px,80%);
+    margin:20px auto 0;
+    transform:rotate(3deg);
   }
-  .combinar-nota{margin-top:26px;font-size:.95rem;}
+  .combinar-nota{margin-top:24px;font-size:.95rem;}
   .combinar-title{margin:8px 0 18px;}
   .paper-note{max-width:300px;padding:18px 20px;font-size:.88rem;}
   .cm-desc{margin-bottom:14px;}
@@ -1195,8 +1201,8 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 
 /* ── Teléfonos chicos ── */
 @media(max-width:600px){
-  .section{padding:38px 16px;}
-  .intencion{padding:38px 16px;}
+  .section{padding:34px 16px;}
+  .intencion{padding:34px 16px 30px;}
   .hero-home{padding:28px 16px;}
   .hero-home-inner,.somos-grid,.servicios-grid,.porfolio-grid,
   .contact-grid,.web-grid{gap:22px;}
