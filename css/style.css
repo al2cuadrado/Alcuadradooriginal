@@ -463,7 +463,7 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 .somos-text .btn{margin-top:34px;}
 
 /* Creamos con intención */
-.intencion{text-align:center;padding:120px 48px;}
+.intencion{text-align:center;padding:60px 48px;}
 .intencion-inner{max-width:1240px;margin:0 auto;position:relative;}
 .intencion-title{width:min(760px,92%);margin:0 auto;position:relative;z-index:2;}
 .intencion-inner > .reveal{position:relative;z-index:2;}
@@ -544,9 +544,14 @@ body.cursor-hover #cursor-ring{width:62px;height:62px;}
 }
 .link-proyectos:hover{border-color:var(--negro);}
 
-/* Menos aire entre porfolio y proceso (el padding 90px de .section se duplicaba) */
-#porfolio{padding-bottom:36px;}
-.proceso{padding-top:40px;}
+/* Menos aire entre secciones (el padding 90px de .section se duplicaba en cada unión) */
+#porfolio{padding-bottom:24px;}
+.proceso{padding-top:30px;padding-bottom:40px;}
+#somos{padding-bottom:40px;}
+#servicios{padding-top:30px;}
+#contacto{padding-top:40px;}
+#desarrollo-web{padding-bottom:24px;}
+.foto-sec{padding-top:40px;}
 
 /* Proceso (acordeón) */
 .proceso h2{
